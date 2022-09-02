@@ -8,10 +8,11 @@ function App() {
     { name: "Michelle Hoelzer", id: 3 }
   ];
 
+  const userList = users.map(user => <li key={user.id}>{user.name}</li>)
   return (
     <div>
       <h1>User names</h1>
-      <ul></ul>
+      <ul>{userList}</ul>
     </div>
   );
 }
